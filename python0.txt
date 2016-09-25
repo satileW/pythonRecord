@@ -1,0 +1,9 @@
+ route() 装饰器把一个函数绑定到对应的 URL上
+
+ @app.route('/')
+def index():
+    return 'Index Page'
+
+@app.route('/hello')
+def hello():
+    return 'Hello World'

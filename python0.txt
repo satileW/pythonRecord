@@ -1,4 +1,4 @@
- route() 装饰器把一个函数绑定到对应的 URL上
+1. route() 装饰器把一个函数绑定到对应的 URL上
 
  @app.route('/')
 def index():
@@ -7,3 +7,17 @@ def index():
 @app.route('/hello')
 def hello():
     return 'Hello World'
+
+2.pass
+Python pass 语句Python pass是空语句，是为了保持程序结构的完整性。 pass 不做任何事情，一般用做占位语句。
+
+3.with
+一种与异常处理相关的功能
+with 语句适用于对资源进行访问的场合，确保不管使用过程中是否发生异常都会执行必要的“清理”操作，释放资源，比如文件使用后自动关闭、线程中锁的自动获取和释放等。
+
+4.test_request_context()
+单元测试的最简单的解决方案是：用 test_request_context() 环境管理器。结合 with 声明，绑定一个测试请求，这样你才能与之交互.
+Besides using the test client as shown above, there is also the test_request_context() method that can be used in combination with the with statement to activate a request context temporarily. With this you can access the request, g and session objects like in view functions.
+
+5.SQL 语句在Python中的使用：
+http://www.runoob.com/python/python-mysql.html

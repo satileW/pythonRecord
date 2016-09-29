@@ -1,0 +1,18 @@
+1.POST
+curl -H "Content-Type: application/json" -X POST -d '{"description":"xyz","done":"xyz","title":"hello to post"}' http://localhost:5000/v1/expenses
+
+curl -H "Content-Type: application/json" -X POST -d '{"name":"family plan","email":"satile@yahoo.com","category":"MacAir","description":"buy for learning","link":"http://applestore.com","estimated_costs":"1199","submit_date":"09-18-2016"}' http://localhost:5000/v1/expenses
+
+2.GET
+用网页好么···最后还是用的curl。。。T^T
+curl -i http://127.0.0.1:5000/
+
+3·DELETE
+curl -X "DELETE" http://127.0.0.1:5000/v1/expenses/2
+
+curl -X "DELETE" -i http://127.0.0.1:5000/v1/expenses/130
+
+4.PUT
+curl -X "PUT" -H 'Content-Type:application/json' -d '{"description":"hello to update!!!!"}' http://127.0.0.1:5000/v1/expenses/1
+
+curl -H "Content-Type: application/json" -X POST -d '{"name":"Foo Bar","email":"foo@bar.com","category":"office supplies|travel|training","description":"ipad for office use","line":"http://www.apple.com/shop/buy-ipad/ipad-pro","estimated_costs":"700","submit_date":"09-08-2016"}' http://localhost:5000/v1/expenses
